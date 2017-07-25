@@ -1,7 +1,7 @@
 <resources>
     <string name="ThemeName">PureZ MaterialBlue</string>
     <string name="ThemeAuthor">ZawZaw</string>
-    <string name="ThemeAuthorEmail">zawzawit.459@gmail.com</string>
+    <string name="ThemeAuthorEmail">mczawzaw12@outlook.com</string>
     <string name="ThemeReadyRequirement">all</string>
 
     <bool name="ThemeSupportLegacy">true</bool>
