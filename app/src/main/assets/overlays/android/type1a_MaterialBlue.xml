@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="material_blue_800">#0853ab</color>
-    <color name="material_blue_850">#0853ab</color>
+    <color name="material_grey_800">#ff0853ab</color>
+    <color name="material_grey_850">#ff0853ab</color>
 </resources>
