@@ -12,7 +12,7 @@
        <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ffc41414</item>
+        <item name="android:textColor">#ff0853ab</item>
         <item name="android:letterSpacing">0.3</item>
     </style>
     <style name="Theme.DialogWhenLarge" parent="@android:style/Theme.Material.DialogWhenLarge">
