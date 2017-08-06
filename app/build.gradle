@@ -9,11 +9,11 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 ext {
-    // Whether the zawzaw assets should be encrypted or not
-    SHOULD_ENCRYPT_ASSETS = false
+    // purez encrypted theme assets
+    SHOULD_ENCRYPT_ASSETS = true
 
-    // Whether this zawzaw supports third party zawzaw systems
-    SUPPORTS_THIRD_PARTY_SYSTEMS = false
+    // purez supports third party systems
+    SUPPORTS_THIRD_PARTY_SYSTEMS = true
 
     // SUBSTRATUM INTERNAL VALUES: DO NOT TOUCH
     byte[] key = new byte[16]
