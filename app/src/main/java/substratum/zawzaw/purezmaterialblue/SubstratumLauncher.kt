@@ -228,7 +228,7 @@ class SubstratumLauncher : Activity() {
                             apps.add(packageManager.getApplicationLabel(appInfo).toString())
                         }
                     } catch (e: Exception) {
-                        // Package not found
+
                     }
                 }
             }
