@@ -54,10 +54,9 @@
         <meta-data
             android:name="Substratum_ThemeReady"
             android:value="@string/ThemeReadyRequirement"/>
-
         <meta-data
             android:name="Substratum_Plugin"
-            android:value="10.0.1"/>
+            android:value="11.1.0"/>
         <meta-data
             android:name="Substratum_Encryption"
             android:value="@string/encryption_status"/>
