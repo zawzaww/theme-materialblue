@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="substratum.zawzaw.purezmaterialblue"
+          package="purez.zawzaw.materialbluetheme"
           android:installLocation="internalOnly">
 
     <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
     <uses-permission android:name="android.permission.INTERNET" />
 	
 	<uses-feature
-        android:name="projekt.substratum.zawzaw"
+        android:name="projekt.purez.zawzaw"
         android:required="false" />
 
     <application
@@ -20,7 +20,7 @@
         tools:node="replace"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name="substratum.zawzaw.purezmaterialblue.SubstratumLauncher">
+        <activity android:name="purez.zawzaw.materialbluetheme.SubstratumLauncher">
             <intent-filter>
                 <action android:name="projekt.substratum.THEME"/>
                 <category android:name="android.intent.category.DEFAULT"/>

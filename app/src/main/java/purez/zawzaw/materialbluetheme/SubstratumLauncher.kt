@@ -1,4 +1,4 @@
-package substratum.zawzaw.purezmaterialblue
+package purez.zawzaw.materialbluetheme
 
 import android.app.Activity
 import android.content.Context
@@ -15,28 +15,28 @@ import com.github.javiersantos.piracychecker.enums.InstallerID
 import com.github.javiersantos.piracychecker.enums.PiracyCheckerCallback
 import com.github.javiersantos.piracychecker.enums.PiracyCheckerError
 import com.github.javiersantos.piracychecker.enums.PirateApp
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.APK_SIGNATURE_PRODUCTION
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.BASE_64_LICENSE_KEY
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.ENABLE_KNOWN_THIRD_PARTY_THEME_MANAGERS
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.ENFORCE_AMAZON_APP_STORE_INSTALL
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.ENFORCE_GOOGLE_PLAY_INSTALL
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.ENFORCE_INTERNET_CHECK
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.ENFORCE_MINIMUM_SUBSTRATUM_VERSION
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.MINIMUM_SUBSTRATUM_VERSION
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.PIRACY_CHECK
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.SUBSTRATUM_FILTER_CHECK
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.THEME_READY_GOOGLE_APPS
-import substratum.zawzaw.purezmaterialblue.internal.SystemInformation.SUBSTRATUM_PACKAGE_NAME
-import substratum.zawzaw.purezmaterialblue.internal.SystemInformation.checkNetworkConnection
-import substratum.zawzaw.purezmaterialblue.internal.SystemInformation.getSelfSignature
-import substratum.zawzaw.purezmaterialblue.internal.SystemInformation.getSelfVerifiedIntentResponse
-import substratum.zawzaw.purezmaterialblue.internal.SystemInformation.getSelfVerifiedPirateTools
-import substratum.zawzaw.purezmaterialblue.internal.SystemInformation.getSelfVerifiedThemeEngines
-import substratum.zawzaw.purezmaterialblue.internal.SystemInformation.getSubstratumUpdatedResponse
-import substratum.zawzaw.purezmaterialblue.internal.SystemInformation.hasOtherThemeSystem
-import substratum.zawzaw.purezmaterialblue.internal.SystemInformation.isCallingPackageAllowed
-import substratum.zawzaw.purezmaterialblue.internal.SystemInformation.isPackageInstalled
-import substratum.zawzaw.purezmaterialblue.internal.TBOConstants.THEME_READY_PACKAGES
+import purez.zawzaw.materialbluetheme.ThemerConstants.APK_SIGNATURE_PRODUCTION
+import purez.zawzaw.materialbluetheme.ThemerConstants.BASE_64_LICENSE_KEY
+import purez.zawzaw.materialbluetheme.ThemerConstants.ENABLE_KNOWN_THIRD_PARTY_THEME_MANAGERS
+import purez.zawzaw.materialbluetheme.ThemerConstants.ENFORCE_AMAZON_APP_STORE_INSTALL
+import purez.zawzaw.materialbluetheme.ThemerConstants.ENFORCE_GOOGLE_PLAY_INSTALL
+import purez.zawzaw.materialbluetheme.ThemerConstants.ENFORCE_INTERNET_CHECK
+import purez.zawzaw.materialbluetheme.ThemerConstants.ENFORCE_MINIMUM_SUBSTRATUM_VERSION
+import purez.zawzaw.materialbluetheme.ThemerConstants.MINIMUM_SUBSTRATUM_VERSION
+import purez.zawzaw.materialbluetheme.ThemerConstants.PIRACY_CHECK
+import purez.zawzaw.materialbluetheme.ThemerConstants.SUBSTRATUM_FILTER_CHECK
+import purez.zawzaw.materialbluetheme.ThemerConstants.THEME_READY_GOOGLE_APPS
+import purez.zawzaw.materialbluetheme.internal.SystemInformation.SUBSTRATUM_PACKAGE_NAME
+import purez.zawzaw.materialbluetheme.internal.SystemInformation.checkNetworkConnection
+import purez.zawzaw.materialbluetheme.internal.SystemInformation.getSelfSignature
+import purez.zawzaw.materialbluetheme.internal.SystemInformation.getSelfVerifiedIntentResponse
+import purez.zawzaw.materialbluetheme.internal.SystemInformation.getSelfVerifiedPirateTools
+import purez.zawzaw.materialbluetheme.internal.SystemInformation.getSelfVerifiedThemeEngines
+import purez.zawzaw.materialbluetheme.internal.SystemInformation.getSubstratumUpdatedResponse
+import purez.zawzaw.materialbluetheme.internal.SystemInformation.hasOtherThemeSystem
+import purez.zawzaw.materialbluetheme.internal.SystemInformation.isCallingPackageAllowed
+import purez.zawzaw.materialbluetheme.internal.SystemInformation.isPackageInstalled
+import purez.zawzaw.materialbluetheme.internal.TBOConstants.THEME_READY_PACKAGES
 import java.io.File
 import java.util.*
 
@@ -93,7 +93,7 @@ class SubstratumLauncher : Activity() {
     }
 
     private fun getSubstratumFromPlayStore() {
-        val playURL = "https://play.google.com/store/apps/details?id=projekt.substratum"
+        val playURL = "https://play.google.com/store/apps/details?id=projekt.purez"
         val i = Intent(Intent.ACTION_VIEW)
         Toast.makeText(this, getString(R.string.toast_substratum), Toast.LENGTH_SHORT).show()
         i.data = Uri.parse(playURL)
@@ -124,8 +124,8 @@ class SubstratumLauncher : Activity() {
         }
 
         var returnIntent = Intent()
-        if (intent.action == "projekt.substratum.GET_KEYS") {
-            returnIntent = Intent("projekt.substratum.RECEIVE_KEYS")
+        if (intent.action == "projekt.purez.GET_KEYS") {
+            returnIntent = Intent("projekt.purez.RECEIVE_KEYS")
         }
 
         val theme_name = getString(R.string.ThemeName)
@@ -152,12 +152,12 @@ class SubstratumLauncher : Activity() {
         returnIntent.putExtra("encryption_key", BuildConfig.DECRYPTION_KEY)
         returnIntent.putExtra("iv_encrypt_key", BuildConfig.IV_KEY)
 
-        if (intent.action == "projekt.substratum.THEME") {
+        if (intent.action == "projekt.purez.THEME") {
             setResult(getSelfVerifiedIntentResponse(applicationContext)!!, returnIntent)
-        } else if (intent.action == "projekt.substratum.GET_KEYS") {
+        } else if (intent.action == "projekt.purez.GET_KEYS") {
             val callingPackage = intent.getStringExtra("calling_package_name")
             returnIntent.`package` = callingPackage
-            returnIntent.action = "projekt.substratum.RECEIVE_KEYS"
+            returnIntent.action = "projekt.purez.RECEIVE_KEYS"
             if (callingPackage != null) {
                 if (isCallingPackageAllowed(callingPackage)) {
                     sendBroadcast(returnIntent)

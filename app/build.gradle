@@ -26,9 +26,9 @@ ext {
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.0"
+    buildToolsVersion '26.0.2'
     defaultConfig {
-        applicationId "substratum.zawzaw.purezmaterialblue"
+        applicationId "purez.zawzaw.materialbluetheme"
         minSdkVersion 24
         targetSdkVersion 26
         versionCode 2

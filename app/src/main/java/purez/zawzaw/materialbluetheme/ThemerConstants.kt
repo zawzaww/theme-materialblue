@@ -1,4 +1,4 @@
-package substratum.zawzaw.purezmaterialblue
+package purez.zawzaw.materialbluetheme
 
 object ThemerConstants {
     // Simple AntiPiracy Configuration

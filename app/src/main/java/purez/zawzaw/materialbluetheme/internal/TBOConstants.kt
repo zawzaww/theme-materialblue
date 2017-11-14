@@ -1,4 +1,4 @@
-package substratum.zawzaw.purezmaterialblue.internal
+package purez.zawzaw.materialbluetheme.internal
 
 object TBOConstants {
 

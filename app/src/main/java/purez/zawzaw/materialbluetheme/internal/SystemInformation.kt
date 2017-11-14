@@ -1,18 +1,18 @@
-package substratum.zawzaw.purezmaterialblue.internal
+package purez.zawzaw.materialbluetheme.internal
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.pm.PackageManager
 import android.content.pm.Signature
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.BLACKLISTED_APPLICATIONS
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.ENABLE_BLACKLISTED_APPLICATIONS
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.ENABLE_KNOWN_THIRD_PARTY_THEME_MANAGERS
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.MINIMUM_SUBSTRATUM_VERSION
-import substratum.zawzaw.purezmaterialblue.ThemerConstants.OTHER_THEME_SYSTEMS
+import purez.zawzaw.materialbluetheme.ThemerConstants.BLACKLISTED_APPLICATIONS
+import purez.zawzaw.materialbluetheme.ThemerConstants.ENABLE_BLACKLISTED_APPLICATIONS
+import purez.zawzaw.materialbluetheme.ThemerConstants.ENABLE_KNOWN_THIRD_PARTY_THEME_MANAGERS
+import purez.zawzaw.materialbluetheme.ThemerConstants.MINIMUM_SUBSTRATUM_VERSION
+import purez.zawzaw.materialbluetheme.ThemerConstants.OTHER_THEME_SYSTEMS
 
 object SystemInformation {
 
-    val SUBSTRATUM_PACKAGE_NAME = "projekt.substratum"
+    val SUBSTRATUM_PACKAGE_NAME = "projekt.purez"
 
     fun checkNetworkConnection(): Boolean? {
         var isConnected = false
