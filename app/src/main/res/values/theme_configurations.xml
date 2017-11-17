@@ -1,11 +1,11 @@
 <resources>
     <string name="ThemeName">PureZ MaterialBLUE</string>
-    <string name="ThemeAuthor">zawzaw</string>
+    <string name="ThemeAuthor">ZawZaw</string>
     <string name="ThemeAuthorEmail">zawzawit.459@gmail.com</string>
     <string name="ThemeReadyRequirement">all</string>
-
     <bool name="ThemeSupportLegacy">true</bool>
     <bool name="ThemeSupportSamsung">true</bool>
+    <string name="ThemeHeroOverride">auto</string>
 
     <string-array name="ThemeChangelog">
         <item> </item>
@@ -14,4 +14,5 @@
         <item> </item>
         <item> </item>
     </string-array>
+
 </resources>
