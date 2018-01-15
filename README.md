@@ -22,8 +22,6 @@ Requirements:
  - Restart SystemUI
  - Done
 
-Happy Theming
+Happy Theming.
 
-Regards,
-
-ZawZaw @xda-developers
+// Contributed by: ZawZaw [@XDA-Developers](https://forum.xda-developers.com/member.php?u=7581611)
