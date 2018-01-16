@@ -8,7 +8,7 @@ object Constants {
 
     // Dynamic filter that only works on Substratum 627+
     // WARNING: Only enable if you are sure you want certification status to pass on Substratum
-    //          before launching the zawzaw, or else it will throw an unauthorized toast!
+    //          before launching the theme, or else it will throw an unauthorized toast!
     const internal val SUBSTRATUM_FILTER_CHECK = false
 
     // Miscellaneous Checks
@@ -27,20 +27,21 @@ object Constants {
             "com.google.android.inputmethod.latin"
     )
 
-    // Blacklisted APKs to prevent zawzaw launching, these include simple regex formatting, without
+    // Blacklisted APKs to prevent theme launching, these include simple regex formatting, without
     // full regex formatting (e.g. com.android. will block everything that starts with com.android.)
     val BLACKLISTED_APPLICATIONS = arrayOf(
-            "com.android.vending.billing.InAppBillingService.LOCK",
-            "com.android.vending.billing.InAppBillingService.LACK",
             "cc.madkite.freedom",
             "zone.jasi2169.uretpatcher",
             "uret.jasi2169.patcher",
+            "p.jasi2169.al3",
             "com.dimonvideo.luckypatcher",
             "com.chelpus.lackypatch",
             "com.forpda.lp",
             "com.android.vending.billing.InAppBillingService.LUCK",
-            "com.android.protips",
             "com.android.vending.billing.InAppBillingService.CLON",
+            "com.android.vending.billing.InAppBillingService.LOCK",
+            "com.android.vending.billing.InAppBillingService.CRAC",
+            "com.android.vending.billing.InAppBillingService.LACK",
             "com.android.vendinc",
             "com.appcake",
             "ac.market.store",
@@ -59,7 +60,7 @@ object Constants {
             "org.blackmart.market"
     )
 
-    // List of other zawzaw systems that are officially unsupported by the team, but fully supported
+    // List of other theme systems that are officially unsupported by the team, but fully supported
     // by their corresponding organizations
     val OTHER_THEME_SYSTEMS = arrayOf(
             "com.slimroms.thememanager",

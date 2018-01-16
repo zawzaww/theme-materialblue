@@ -19,19 +19,6 @@ object ThemeFunctions {
 
     val SUBSTRATUM_PACKAGE_NAME = "projekt.purez"
 
-    fun checkNetworkConnection(): Boolean? {
-        var isConnected = false
-        try {
-            val process = Runtime.getRuntime().exec("/system/bin/ping -c 1 www.google.com")
-            val returnVal = process.waitFor()
-            isConnected = returnVal == 0
-        } catch (e: Exception) {
-            // Suppress error
-        }
-
-        return isConnected
-    }
-
     fun isPackageInstalled(context: Context, package_name: String): Boolean {
         return try {
             val pm = context.packageManager
