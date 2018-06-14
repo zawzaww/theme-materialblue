@@ -1,18 +1,13 @@
 # PureZ MaterialBLUE Theme
 
-Substratum Theme Engine : PureZ MaterialBLUE Theme for Substratum
+## PureZ MaterialBLUE Theme for Android: Substratum Theme Engine
 
-<img src="https://s20.postimg.org/kjqdjm2e5/Pureview1.png" />
-
-<img src="https://s20.postimg.org/tc7c7anj1/Pureview2.png" />
-
-<img src="https://s20.postimg.org/kigfq70kd/Pureview3.png" />
-
+<img src="https://s20.postimg.cc/kjqdjm2e5/Pureview1.png" />
 
 Requirements:
  - Android 7.0 and Up
  - Substratum/OMS Support ROM
- - Substratum Theme Manager (Get on Google Playstore)
+ - Substratum Theme Manager App ([Get on Google Playstore](https://play.google.com/store/apps/details?id=projekt.substratum&hl=en))
 
  How To Install:
  - Download theme
