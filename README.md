@@ -1,6 +1,6 @@
 # PureZ MaterialBLUE Theme
 
-## PureZ MaterialBLUE Theme for Android: Substratum Theme Engine
+## PureZ MaterialBLUE Theme for android: substratum theme engine
 
 <img src="https://s20.postimg.cc/kjqdjm2e5/Pureview1.png" />
 
